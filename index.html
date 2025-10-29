@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F0F9FF;
+            padding: 0px;
+            margin: 0px;
+            background-repeat: no-repeat;
+        }
+        
+        
+        nav {
+            background-color: #083845;
+            color: white;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+        
+        .heading {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .navlink {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .navlink li a{
+            color: white;
+            font-weight: bold;
+            transition: 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .navlink a:hover {
+            color: #ffd700;
+            border-bottom: 20px solid #ffd700;
+        }
+        
+        .body {
+            height: 50vh;
+            background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+        
+        .body-text {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .body-text h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .body-text p {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            background-color: #ffd700;
+            color: #003366;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-weight: bold;
+            transition: 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background-color: #083845;
+            color: #ffd700;
+        }
+        
+        .section {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .section h2 {
+            color: #083845;
+            font-size: 30px;
+        }
+        
+        .section p {
+            font-size: 25px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .section ul {
+            font-size: 25px;
+        }
+        
+        .section li {
+            background-color: #C2E8F2;
+            border-left: 10px solid #083845;
+            border-radius: 10px;
+            margin: 10px auto;
+            width: 500px;
+        }
+        strong {
+            color: #083845;
+        }
+        
+        input, textarea {
+            width: 70%;
+            padding: 10px;
+            border: solid #ccc;
+            border-radius: 8px;
+            font-size: 20px;
+            grid-auto-flow: yes;
+    }
+    
+         button {
+            background: #083845;
+            padding: 15px 30px;
+            margin: 10px 30px auto;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+    }
+    
+        button:hover {
+            background-color: #ff6600;}
+        
+        footer {
+            font-weight: bold;
+            text-align: center;
+            background-color: #083845;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR-->
+    <nav class="navbar">
+        <div class="heading">SmartDev huv</div>
+        <ul class="navlink">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- BODY SECTION -->
+    <section class="body">
+        <div class="body-text">
+            <h1>Welcome to my SmartDev huv</h1>
+            <strong>Code Smart |:| Build Better</strong>
+            <p>Building my future one line of code at a time</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+    
+    <!-- SECTION ABOUT ME -->
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>My name is <strong>Misbahu Habeeb</strong>. I am a passionate learner of web development, 
+        starting from the frontend and gradually mastering backend technologies. 
+        <strong>My dreams</strong> is to build a professional Websites for business owners, companies, 
+        personal users, such as full VTU/data platforms that provides real services to users globally</p>
+    </section>
+    
+    <!-- SERVICES -->
+    <section class="section" id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+            <li>UI/UX Design</li>
+            <li>VTU & DATA Web Services</li>
+            <li>Domain & Hosting Solutions</li>
+            <li>Tech Support & Maintenance</li>
+        </ul>
+    </section>
+    
+    <!-- SKILLS -->
+     <section class="section" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5, CSS3</li>
+      <li>Responsive Web Design</li>
+      <li>JavaScript (Learning)</li>
+      <li>Version Control (Git & GitHub)</li>
+      <li>Basic UI/UX Principles</li>
+    </ul>
+  </section>
+    
+    <!-- CONTACT ME -->
+    <section class="section" id="contact">
+        <h2>Contact Me</h2>
+         <p>You can reach me anytime.
+        I’m always open to learning, collaborating, and creating meaningful projects.</p>
+        <p>📞 <strong>08065058518</strong></p>
+        <p>📧 <strong >mhabibddm@gmail.com</strong></p>
+        <p><strong>Address: No. 35 Titin Gilima Road, Sabon Gari Dandume LG, Katsina State. Nigeria</strong></p>
+    </section>
+    
+    <section class="section" id="mail">
+        <h2>Send Your Message</h2>
+        <form action="https://formspree.io/f/mdkwjdqd" method="POST">
+            <input type="text" name="fname" placeholder="Your name" required>
+            <input type="text" name="email" placeholder="Your mail" required>
+            <textarea name="message" rows="20" placeholder="Your message" required></textarea><br>
+            <button type="submit" name="Send">Send</button>
+        </form>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <p>©️2025 mhabib, Alright reserve</p>
+    </footer>
+</body>
+</html>
