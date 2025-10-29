@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile Card</title>
+  <style>
+  
+  /* ========================= */
+/* RESPONSIVE DESIGN SECTION */
+/* ========================= */
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .container {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  section h2 {
+    font-size: 1.4em;
+  }
+
+  section p {
+    padding: 0px 20px;
+    font-size: 1em;
+  }
+
+  .skills ul {
+    width: 90%;
+  }
+
+  input, textarea {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  button {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .projects {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.7em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  section h2 {
+    font-size: 1.2em;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 0.9em;
+  }
+}
+  
+  
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f6fc;
+      text-align: center;
+      margin-top: 0px;
+      padding: 0px;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 800px;
+        box-shadow: 0 0 15px #0b74de;
+        border-radius: 15px;
+        margin: 50px auto;
+        background: white;
+    }
+    
+    header {
+        background-color: #0b74de;
+        text-align: center;
+        color: white;
+        padding: 40px 20px;
+        border-radius: 8px;
+    }
+    
+    header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+    
+    header p {
+        font-size: 1.2em;
+        font-style: italic;
+    }
+    
+    section h2 {
+        color: #0b74de;
+        font-style: bold;
+    }
+    
+    section p {
+        padding: 0px 50px;
+    }
+    #about p {
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .skills ul {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        text-align: left;
+    }
+    
+    .skills li {
+        background-color: #f0f8ff;
+        border-left: 5px solid #0b74de;
+        border-radius: 6px;
+        padding: 8px 15px;
+        margin: 8px 0px;
+    }
+    
+    .projects {
+        background-color: #f0f8ff;
+        border: solid #0b74de;
+        border-radius: 15px;
+        margin: 10px auto;
+        width: 80%;
+    }
+    
+    .projects h3 {
+        color: #0b74de;
+        margin-bottom: 50px;
+    }
+    
+    input, textarea {
+        width: 80%;
+        padding: 10px;
+        border: solid #ccc;
+        border-radius: 8px;
+        font-size: 20px;
+        grid-auto-flow: yes;
+    }
+    
+    button {
+        background: #0b74de;
+        padding: 10px 20px;
+        margin: 10px 30px auto;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #ff6600;
+    }
+    
+    footer {
+        background-color: #0b74de;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        margin: 30px auto;
+        padding: 30px;;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+            <!-- header -->
+           <header>
+        <h1>SmartDev Hub</h1>
+        <p>Code smart | Build Better</p>
+    </header>
+    
+    <!-- content -->
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm an aspiring Web Developer passionate
+                about technology, innovation, and design. 
+                I enjoy learning new coding skills and building 
+                creative, user-friendly web experiences.</p>
+                
+        <section class="skills">
+            <h2> My Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>Responsive Web Design</li>
+                <li>Basic JavaScript (Learning)</li>
+                <li>UI/UX Design</li>
+                <li>Web Hosting & Domains</li>
+            </ul>
+        </section>
+        
+        <section class="project">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <h3>SmartDev Hub Page</h3>
+                <p>A professional web page building
+                   using only HTML & CSS</p>
+            </div>
+            
+            <div class="projects">
+                <h3>Simple Login Form</h3>
+                <p>A responsive login page with modern design elements</p>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form>
+              <input type="text" name="fname" 
+               placeholder="Your name" required>
+              <input type="text" name="email" 
+               placeholder="Your email" required>
+              <textarea rows="10" placeholder="Your message" required></textarea>
+              <button type="submit">Send your messages</button>
+            </form>
+        </section>
+        </main>
+        
+        <!-- footer -->
+        <footer>
+            <strong>
+                ©️ 2025 SmartDev Hub | Design by Mhabib
+            </strong>
+        </footer>
+    </div>
+    
+</body>
+</html>
